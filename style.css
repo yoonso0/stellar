@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/* 웹 사이트 화면을 넘어가면 hidden */
+ul {
+    width: 300%;
+    height: 600px;
+    animation: pu 10s infinite;
+}
+
+li {
+    width: calc(100% / 3);
+    height: 600px;
+    float: left;
+    text-align: center;
+}
+li p{
+    color: white;
+    font-size: 30px;
+    margin-top: 200px;
+}
+
+li b{
+    color: white;
+    font-size: 50px;
+}
+
+li span{
+    color: white;
+    font-size: 17px;
+}
+
+li {
+    /* background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+}
+
+li:nth-child(1){
+    background: url(./img/11.png) center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+li:nth-child(2) {
+    background: url(./img/22.png) center no-repeat;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+@keyframes pu {
+    0%{
+        margin: 0;
+    }
+    50%{
+        margin-left: -100%;
+    }
+    100%{
+        margin-left: -200%;
+    }
+}
